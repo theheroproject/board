@@ -25,10 +25,10 @@ def unauthorized_handler():
     return make_response(jsonify(success=False), 401)
 
 
-# @app.route('/')
-# def hello_world():
-#     return 'Hello Worl1d!'
-#
+@app.route('/')
+def hello_world():
+    return 'Hello Worl1d!'
+
 
 @app.route('/')
 def html_test():
